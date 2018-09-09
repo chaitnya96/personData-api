@@ -15,7 +15,7 @@ class Location(models.Model):
 
 
 class PersonDetail(models.Model):
-    person_img = models.ImageField(default=None, null=True)
+    person_img = models.ImageField(default=None, null=True, blank=True)
     First_name = models.CharField(max_length=250)
     Last_name = models.CharField(max_length=250)
     organization = models.CharField(max_length=70)
